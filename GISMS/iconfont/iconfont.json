@@ -1,0 +1,37 @@
+{
+  "id": "2867307",
+  "name": "海滩",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5218418",
+      "name": "西瓜",
+      "font_class": "xigua",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "21135890",
+      "name": "005-beach-ball",
+      "font_class": "005-beach-ball",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "1337336",
+      "name": "Beach Umbrella",
+      "font_class": "BeachUmbrella",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "1337337",
+      "name": "Beach",
+      "font_class": "Beach",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    }
+  ]
+}

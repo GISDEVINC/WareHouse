@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'zpix';
+  src: url('../font/zpix.woff2');
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10.66666667vw;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.bgImg {
+  background-image: url('../img/background_Mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.bgImg #beachTree {
+  display: none;
+}
+.bgImg #beachWatermelon {
+  display: none;
+}
+.bgImg .ballWrapper {
+  display: none;
+}
+.figure .navLocator .navWrapper {
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-3.5rem);
+}
+.figure .navLocator .navWrapper .GISMS {
+  font-size: 2rem;
+  text-align: center;
+  width: 6rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-image: radial-gradient(circle at 100px 100px, #78c7c7 0%, #ffd4d4 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: zpix;
+  animation: animeGISMS 0.5s cubic-bezier(0.76, -0.03, 0.81, 0.57);
+  border-right: 0.1em orange solid;
+}
+.figure .navLocator .navWrapper .GISMS .sTitle {
+  height: 0.5rem;
+  font-size: 0.5rem;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: radial-gradient(circle at 100px 100px, #f7f9ff 0%, #ffcce1 100%);
+  width: 0;
+  animation: typewriter 2s 0.5s steps(50, end) forwards, blinkCaret 0.75s step-end infinite;
+  border-right: 0.1em white solid;
+}
+.figure .navLocator .navWrapper .GISMS .navi {
+  position: absolute;
+  transform: translateY(0.6rem);
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+  overflow: hidden;
+  height: 0;
+  animation: animeNavi 2s 2.5s linear forwards;
+}
+.figure .navLocator .navWrapper .GISMS .navi .Arek {
+  background-image: linear-gradient(to bottom, #2a6f97 10%, #9d4edd 90%, #f28482 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.figure .navLocator .navWrapper .GISMS .navi .Arek::before {
+  content: '';
+  width: 4rem;
+  height: 1.5rem;
+  background-image: linear-gradient(217deg, rgba(238, 188, 151, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(255, 137, 167, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(150, 230, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0.6;
+  filter: blur(20px);
+  animation: animeArekOpacity 0.1s linear infinite;
+  border-radius: 20%;
+  z-index: -1;
+}
+.figure .navLocator .navWrapper .GISMS .navi .map {
+  width: 6rem;
+  height: calc(6rem/800*387);
+  background-image: url('../img/map.png');
+  background-size: cover;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(0.4rem) translateX(-0.1rem);
+  opacity: 0.9;
+}
+@keyframes animeGISMS {
+  from {
+    width: 0rem;
+  }
+  to {
+    width: 6rem;
+  }
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8.2rem;
+  }
+}
+@keyframes blinkCaret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+@keyframes animeNavi {
+  from {
+    height: 0;
+  }
+  to {
+    height: 4.8rem;
+  }
+}
+@keyframes animeArekOpacity {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+/*# sourceMappingURL=./gisms_mobile.css.map */
