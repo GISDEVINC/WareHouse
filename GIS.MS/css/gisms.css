@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'zpix';
+  src: url('../font/zpix.woff2');
+}
+body {
+  perspective: 1000px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.bgImg {
+  background-image: url('../img/background.jpg');
+  width: 200%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  left: -50%;
+  transform: scale(1.1);
+  transition: transform 0.2s linear;
+  transform-style: preserve-3d;
+  position: relative;
+  font-size: 800px;
+  color: red;
+}
+.bgImg #beachTree {
+  font-size: 500px;
+  position: absolute;
+  left: 25%;
+  bottom: -21%;
+  animation: animeTree 2s alternate infinite;
+}
+.bgImg .ballWrapper {
+  width: 10%;
+  height: 200%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 6%;
+  transform-origin: center bottom;
+  animation: ballWrapperRotate 6s infinite;
+}
+.bgImg .ballWrapper #beachBall {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  animation: ballRotate 6s linear infinite;
+  transform-style: preserve-3d;
+}
+.bgImg #beachWatermelon {
+  font-size: 200px;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  transform: rotateZ(25deg);
+  animation: animeWatermelon 1s steps(2) infinite;
+}
+.figure {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/figure.png');
+  background-size: cover;
+  background-position: center top;
+  position: absolute;
+  left: -3%;
+  top: 0;
+  transform: scale(1.1);
+  transform-style: preserve-3d;
+  transition: transform 0.2s linear;
+  z-index: 2;
+}
+.figure .navLocator {
+  left: 0;
+  right: 0;
+  top: 25%;
+  margin: 0 auto;
+  width: 10%;
+  position: relative;
+}
+.figure .navWrapper::before {
+  content: '';
+  position: absolute;
+  left: 275%;
+  width: 300px;
+  height: 100px;
+  background-image: linear-gradient(217deg, rgba(238, 188, 151, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(255, 137, 167, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(150, 230, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  filter: blur(20px);
+  opacity: 1;
+}
+.figure .navWrapper .GISMS {
+  background-image: url('../img/cloud.png');
+  background-repeat: repeat;
+  background-size: 666px 666px;
+  background-position: 66% 66%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 300px;
+  height: 200px;
+  font-size: 100px;
+  position: absolute;
+  left: 275%;
+  font-family: zpix;
+  animation: animeGISMS 0.5s cubic-bezier(0.76, -0.03, 0.81, 0.57);
+}
+.figure .navWrapper .GISMS .gismsTextBorder {
+  overflow: hidden;
+  border-right: 0.1em orange solid;
+  animation: animeGISMS 0.5s cubic-bezier(0.76, -0.03, 0.81, 0.57);
+}
+.figure .navWrapper .GISMS::before {
+  content: '';
+  width: 240px;
+  height: 14px;
+  white-space: nowrap;
+  position: absolute;
+  left: 25px;
+  top: 100px;
+  background-image: linear-gradient(#2c8be4, #e6f2fe);
+  z-index: -1;
+  opacity: 0.8;
+  filter: blur(10px);
+}
+.figure .navWrapper .GISMS .sTitle {
+  content: 'Geographic Information Science';
+  font-size: 14px;
+  background-image: linear-gradient(to bottom, #49f9ff 10%, white 90%, #49f9ff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transform: translateX(25px) translateY(-5px);
+  filter: brightness(100);
+  opacity: 0.9;
+  transition: opacity 0.1s;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  border-right: 0.1em white solid;
+  animation: typewriter 2s 0.5s steps(50, end) forwards, blinkCaret 0.75s step-end infinite;
+}
+.figure .navWrapper .GISMS .navi {
+  height: 0%;
+  animation: animeNavi 0.6s 2.5s cubic-bezier(0.76, -0.03, 0.81, 0.57) forwards;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.figure .navWrapper .GISMS .navi .Arek {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 60%;
+  height: 69px;
+  font-size: 66px;
+  transform: translateY(25px);
+  background-image: linear-gradient(to bottom, #2a6f97 10%, #9d4edd 90%, #f28482 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  line-height: 100%;
+}
+.figure .navWrapper .GISMS .navi .Arek::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -4%;
+  background-image: linear-gradient(217deg, rgba(255, 241, 231, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(255, 211, 222, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(184, 185, 185, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  filter: blur(20px);
+  z-index: -1;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+.figure .navWrapper .GISMS .navi .Arek:hover::before {
+  filter: blur(0px);
+}
+.figure .navWrapper .GISMS .navi .map {
+  width: 300px;
+  height: calc(300px/800*387);
+  background-image: url('../img/map.png');
+  background-size: cover;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(55px) translateX(-11px);
+  opacity: 0.9;
+}
+@keyframes ballRotate {
+  from {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(-1turn);
+  }
+  to {
+    transform: rotateZ(0turn);
+  }
+}
+@keyframes ballWrapperRotate {
+  from {
+    transform: rotateZ(-60deg);
+    animation-timing-function: cubic-bezier(0.24, 0.54, 0.49, 0.73);
+  }
+  50% {
+    transform: rotateZ(60deg);
+    animation-timing-function: cubic-bezier(0.24, 0.54, 0.49, 0.73);
+  }
+  to {
+    transform: rotateZ(-60deg);
+  }
+}
+@keyframes animeWatermelon {
+  from {
+    transform: rotateZ(25deg) scale(1);
+  }
+  to {
+    transform: rotateZ(25deg) scale(1.5);
+  }
+}
+@keyframes animeTree {
+  from {
+    transform: translateZ(50px) rotateY(5deg);
+  }
+  to {
+    transform: translateZ(50px) rotateY(-5deg);
+  }
+}
+@keyframes animeGISMS {
+  from {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 230px;
+  }
+}
+@keyframes blinkCaret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+@keyframes animeNavi {
+  from {
+    height: 0;
+  }
+  to {
+    height: 160%;
+  }
+}
+/*# sourceMappingURL=./gisms.css.map */
