@@ -3,14 +3,14 @@ window.onload = function() {
     let styleSheet = document.getElementById('css');
     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
         //移动端JS
-        styleSheet.setAttribute('href', './css/gisms_mobile.css');
+        styleSheet.setAttribute('href', 'https://cdn.jsdelivr.net/gh/GISDEVINC/WareHouse/GIS.MS/css/gisms_mobile.css');
 
         // 把AREK更改为BLOG
         let arekA = document.getElementsByClassName('Arek')[0].firstElementChild;
         arekA.textContent = 'BLOG';
     } else {
         // 电脑端JS
-        styleSheet.setAttribute('href', './css/gisms.css');
+        styleSheet.setAttribute('href', 'https://cdn.jsdelivr.net/gh/GISDEVINC/WareHouse/GIS.MS/css/gisms.css');
         var bgImg = document.getElementsByClassName('bgImg')[0];
         var fgImg = document.getElementsByClassName('figure')[0];
         var barGadget = document.getElementsByClassName('barGadget')[0];
