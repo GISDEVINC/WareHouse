@@ -13,3 +13,8 @@
   src: url("SimSun.ttf") format("ttf");
   font-weight: normal;
 }
+
+@font-face{
+    font-family: 'SFMono-Regular';
+    src:url('SFMono-Regular.tff') format("truetype");
+}
