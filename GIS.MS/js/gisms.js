@@ -7,7 +7,7 @@ window.onload = function() {
 
         // 把AREK更改为BLOG
         let arekA = document.getElementsByClassName('Arek')[0].firstElementChild;
-        arekA.textContent = 'BLOG';
+        arekA.textContent = '散装学术';
     } else {
         // 电脑端JS
         styleSheet.setAttribute('href', 'https://cdn.jsdelivr.net/gh/GISDEVINC/WareHouse/GIS.MS/css/gisms.css');
