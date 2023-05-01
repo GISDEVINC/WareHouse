@@ -5,7 +5,7 @@ window.onload = function() {
         //移动端JS
         styleSheet.setAttribute('href', 'https://cdn.jsdelivr.net/gh/GISDEVINC/WareHouse/GIS.MS/css/gisms_mobile.css');
 
-        // 把SCHOLAR更改为散装学术
+        // 把AREK更改为散装学术
         let arekA = document.getElementsByClassName('Arek')[0].firstElementChild;
         arekA.textContent = '散装学术';
     } else {
