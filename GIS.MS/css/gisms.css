@@ -106,9 +106,9 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  width: 345px;
+  width: 300px;
   height: 200px;
-  font-size: 100px;
+  font-size: 72px;
   position: absolute;
   left: 275%;
   font-family: zpix;
@@ -118,6 +118,8 @@ body {
   overflow: hidden;
   border-right: 0.1em orange solid;
   animation: animeGISMS 0.5s cubic-bezier(0.76, -0.03, 0.81, 0.57);
+  margin-bottom: 20px;
+  text-align: center;
 }
 .figure .navWrapper .GISMS::before {
   content: '';
@@ -160,8 +162,7 @@ body {
   right: 0;
   margin: 0 auto;
   width: 60%;
-  height: 69px;
-  font-size: 66px;
+  font-size: 39px;
   transform: translateY(25px);
   background-image: linear-gradient(to bottom, #2a6f97 10%, #9d4edd 90%, #f28482 100%);
   background-clip: text;
