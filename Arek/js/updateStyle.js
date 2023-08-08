@@ -19,6 +19,10 @@ function updateStyle() {
     jQuery("blockquote p").attr("style", "color: #666;");
     jQuery("#emotional_img").addClass("focus").css("pointer-events","auto"); //hover选择器
     jQuery("#wpdcom *").removeClass("wpdiscuzWhileBgBlack");
+    // 更改scrollbar颜色
+    jQuery("body::-webkit-scrollbar-thumb").attr("style", "background: #a6a6a6")
+    jQuery("body::-webkit-scrollbar-track").attr("style", "background: #121212")
+    // 更改LightsOut勾选框
     jQuery("#update_style").attr('checked', false);
   } else {
     jQuery("#footer").attr("style", "");
@@ -29,6 +33,10 @@ function updateStyle() {
     jQuery("blockquote p").attr("style", "color: #798ba9;");
     jQuery("#emotional_img").addClass("focus").css("pointer-events","none"); //hover选择器
     jQuery("#wpdcom *").addClass("wpdiscuzWhileBgBlack");
+    // 更改scrollbar颜色
+    jQuery("body::-webkit-scrollbar-thumb").attr("style", "background: #646464")
+    jQuery("body::-webkit-scrollbar-track").attr("style", "background: #fff")
+    // 更改LightsOut勾选框
     jQuery("#update_style").attr('checked', true);
   }
 }
