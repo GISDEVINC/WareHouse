@@ -14,8 +14,14 @@
 }
 
 #anime_girl_bottom_right {
+    background: center/cover no-repeat;
+    background-image: url('https://cdn.jsdelivr.net/gh/GISDEVINC/WareHouse/homepage/202309291214175.png');
+    right: 0;
+    bottom: 0;
+    position: fixed;
     height: 30vw;
     width: 30vw;
+    z-index: 1;
 }
 
 /*#emotional_img{
