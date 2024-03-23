@@ -270,4 +270,18 @@ body {
     height: 160%;
   }
 }
+::selection {
+    background:#FFE500;
+    color:#121212;
+}
+
+::-moz-selection {
+    background:#FFE500;
+    color:#121212;
+}
+
+::-webkit-selection {
+    background:#FFE500;
+    color:#121212;
+}
 /*# sourceMappingURL=./gisms.css.map */
