@@ -5,9 +5,9 @@ window.onload = function() {
         //移动端JS
         styleSheet.setAttribute('href', 'https://cdn.jsdelivr.net/gh/GISDEVINC/WareHouse/GIS.MS/css/gisms_mobile.css');
 
-        // 把AREK更改为散装学术
+        // 把AREK更改为深萌图谱
         let arekA = document.getElementsByClassName('Arek')[0].firstElementChild;
-        arekA.textContent = '散装学术';
+        arekA.textContent = '深萌图谱';
     } else {
         // 电脑端JS
         styleSheet.setAttribute('href', 'https://cdn.jsdelivr.net/gh/GISDEVINC/WareHouse/GIS.MS/css/gisms.css');
